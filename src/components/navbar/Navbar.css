@@ -1,7 +1,12 @@
 .navbar {
     display: flex;
     flex-direction: column;
+    transition: 1.5s;
   }
+
+.navbar:hover {
+  background-color: white;
+}
   
   .header {
     width: 95%;

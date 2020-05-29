@@ -12,7 +12,7 @@ const Home = () => {
                     <button type="button" class="btn btn-primary">Gotta catch 'em all</button>
                 </div>
                 <div className="landingContent-img">
-                    <img className="my-auto" src={ PokemonImg } height="360" alt="Pokemon"/>
+                    <img className="my-auto" src={ PokemonImg } height="400" alt="Pokemon"/>
                 </div>
             </div>
             <div class="DeckHolder">
