@@ -1,0 +1,34 @@
+.landingContent {
+    background-image: url('https://yousillymommy.files.wordpress.com/2016/08/pokemon-ball-colors-simple-background-1440x900.png');
+    width: 100%;
+    height: auto;
+    display: flex;
+}
+
+.landingContent-text {
+    font-family: 'Chelsea Market', cursive;
+    width: 60%;
+    height: auto;
+    margin: 70px 30px;
+}
+
+.landingContent-text h3 {
+    padding: 15px 40px;
+    font-size: 40px;
+}
+
+.landingContent-text p {
+    padding: 13px 40px;
+    font-size: 20px;
+    font-family: 'Anton', sans-serif;
+}
+
+.landingContent-text button {
+    margin: 15px 40px;
+}
+
+.landingContent-img {
+    width: 30%;
+    height: auto;
+    margin: 70px 30px;
+}

@@ -26,4 +26,7 @@
     margin-right: 60px;
     width: 50px;
   }
-  
+
+  .header2 {
+    border-bottom: 2px solid;
+  }
