@@ -3,6 +3,7 @@
     width: 100%;
     height: auto;
     display: flex;
+    flex-wrap: wrap;
 }
 
 .landingContent-text {
@@ -31,4 +32,12 @@
     width: 30%;
     height: auto;
     margin: 70px 30px;
+}
+
+.DeckHolder {
+    width: 80%;
+    background-color: thistle;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
 }

@@ -1,6 +1,7 @@
 import React from 'react';
 import PokemonImg from "../../assets/pokemon-img.png"
 import './Home.css'
+import Card from '../../components/card/card'
 
 const Home = () => {
     return (
@@ -15,8 +16,17 @@ const Home = () => {
                     <img className="my-auto" src={ PokemonImg } height="400" alt="Pokemon"/>
                 </div>
             </div>
-            <div class="DeckHolder">
-                <p>Here is where cards will be</p>
+            <div class="DeckHolder mt-4 mb-4 d-flex">
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
+                <Card />
             </div>
         </div>
     )

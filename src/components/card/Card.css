@@ -1,0 +1,8 @@
+.card-holder {
+    margin: auto;
+}
+
+.button-holder {
+    display: flex;
+    justify-content: space-between;
+}
