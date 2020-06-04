@@ -1,14 +1,15 @@
 import React from "react";
 import './Card.css';
-import Ejemplo from "../../assets/ejemplo.png"
+import PropTypes from "prop-types";
 
-const Card = () => {
+const Card = props => {
+
     return (
         <div className='card-holder'>
             <div className="card ml-3 mr-3 mt-4 mb-4" style={{width: '18rem'}}>
-                <img className="card-img-top mt-4" src={ Ejemplo } height="150" alt="FrontImagePokemon" />
+                <img className="card-img-top mt-4" src={`https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/${props.tag}.png`} height="200" alt="FrontImagePokemon" />
                 <div className="card-body">
-                    <h5 className="card-title">Pokemon Name</h5>
+                    <h5 className="card-title">{props.name}</h5>
                     <div className="button-holder">
                         <button type="button" className="btn btn-warning">
                             <img className="mr-1" src="https://img.icons8.com/material-outlined/24/000000/show-property.png" alt="details"/>
@@ -24,5 +25,10 @@ const Card = () => {
         </div>
     )
 } 
+
+Card.propTypes = {
+    name: PropTypes.string,
+    tag: PropTypes.number
+};
 
 export default Card;

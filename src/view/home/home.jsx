@@ -3,18 +3,16 @@ import PokemonImg from "../../assets/pokemon-img.png"
 import './Home.css'
 import Card from '../../components/card/card'
 
-const Home = () => {
+const Home = props => {
     const [pokemonName, setPokemonName] = React.useState([]);
 
     React.useEffect(()=> {
-        //console.log('useEffect')
         obtainData()
     }, []);
 
     const obtainData = async() => {
         const data = await fetch ('https://pokeapi.co/api/v2/pokemon/');
         const names = await data.json();
-        //console.log(names.results);
         setPokemonName(names.results)
     }
 
@@ -32,10 +30,13 @@ const Home = () => {
             </div>
             <div className="DeckHolder mt-4 mb-4 d-flex">
                 {
-                    pokemonName.map(item => {
+                    pokemonName.map((item, ind) => {
+                        let x = item.url;
+                        let x1 = x.substr(34)
+                        let x2 = parseInt(x1)
                         return (
-                            <Card key={item.ind} name={item.name} />
-                        )
+                            <Card key={ind} name={item.name} tag={x2}/>
+                        ) 
                     })
                 }
             </div>
