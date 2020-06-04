@@ -5,6 +5,7 @@ import './Details.css';
 
 const Details = props => {
     const [pokemonData, setPokemonData] = React.useState([]);
+    const [pokemonType, setPokemonType] = React.useState([]);
 
     React.useEffect(()=> {
         obtainPokemonData()
@@ -14,6 +15,7 @@ const Details = props => {
         const data = await fetch (`https://pokeapi.co/api/v2/pokemon/${props.match.params.tag}`);
         const array = await data.json();
         setPokemonData(array)
+        setPokemonType(array.types)
     }
 
     return (
@@ -41,7 +43,7 @@ const Details = props => {
                     </div>
                     <div className="pokedex_screen-inside-rigth pl-2">
                         <p className="btn btn-dark">Weight: {pokemonData.weight}</p>
-                        <p className="btn btn-dark">Weight: {pokemonData.height}</p>
+                        <p className="btn btn-dark">Height: {pokemonData.height}</p>
                     </div>
                 </div>
             </div>
