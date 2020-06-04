@@ -1,6 +1,7 @@
 import React from "react";
 import './Card.css';
 import PropTypes from "prop-types";
+import { Link } from "react-router-dom";
 
 const Card = props => {
 
@@ -11,10 +12,12 @@ const Card = props => {
                 <div className="card-body">
                     <h5 className="card-title">{props.name}</h5>
                     <div className="button-holder">
+                        <Link to="/details">
                         <button type="button" className="btn btn-warning">
                             <img className="mr-1" src="https://img.icons8.com/material-outlined/24/000000/show-property.png" alt="details"/>
                             Details
                         </button>
+                        </Link>
                         <button type="button" className="btn btn-danger">
                             <img className="mr-1" src="https://img.icons8.com/material-outlined/24/000000/add-to-favorites.png" alt="favorite"/>
                             Favorites

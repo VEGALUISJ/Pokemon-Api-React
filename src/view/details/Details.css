@@ -1,0 +1,124 @@
+.pokedex {
+    width: 75%;
+    height: auto;
+    background-color: red;
+    margin: auto;
+    margin-top: 40px;
+    border-radius: 25px 25px 0px 0px;
+}
+
+.pokedex_light {
+    border-radius: 25px 25px 0px 0px;
+    display: flex;
+    flex-direction: row;
+    padding-left: 5%;
+}
+
+.pokedex_light-blue {
+    width: 50px;
+    height: 50px;
+    background-color: skyblue;
+    border: 5px solid #1C6EA4;
+    border-radius: 40px;
+}
+
+.pokedex_light-red {
+    width: 25px;
+    height: 25px;
+    background-color: red;
+    border: 3px solid rgb(140, 0, 0);
+    border-radius: 40px;
+}
+
+.pokedex_light-yellow {
+    width: 25px;
+    height: 25px;
+    background-color: yellow;
+    border: 3px solid rgb(216, 242, 71);
+    border-radius: 40px;
+}
+
+.pokedex_light-green {
+    width: 25px;
+    height: 25px;
+    background-color: green;
+    border: 3px solid rgb(0, 91, 11);
+    border-radius: 40px;
+}
+
+.pokedex_screen {
+    background-color: grey;
+    width: 85%;
+    height: 350px;
+    margin: auto;
+    padding-top: 25px;
+    border-radius: 15px 15px 15px 80px;
+}
+
+.pokedex_screen-inside {
+    background-color: black;
+    width: 90%;
+    height: 90%;
+    margin: auto;
+    border-radius: 15px;
+}
+
+.pokedex_buttons {
+    width: 90%;
+    height: 100px;
+    margin: auto;
+    display: flex;
+    flex-direction: row;
+}
+
+.pokedex_buttons-left {
+    width: 33%;
+    height: 100%;
+}
+
+.pokedex_buttons-left__blackButton {
+    width: 65px;
+    height: 65px;
+    background-color: black;
+    border-radius: 40px;
+    border: 3px solid rgb(1, 31, 5);
+    margin-left: 35%;
+    margin-top: 2%;
+}
+
+.pokedex_buttons-center {
+    width: 33%;
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+}
+
+.pokedex_buttons-center__select {
+    width: 30%;
+    height: 25px;
+    background-color: black;
+    margin-right: 20%;
+    margin-left: 10%;
+    border-radius: 15px;
+    margin-top: 7%;
+}
+
+.pokedex_buttons-center__start {
+    width: 30%;
+    height: 25px;
+    background-color: black;
+    border-radius: 15px;
+    margin-top: 7%;
+}
+
+.pokedex_buttons-rigth {
+    width: 33%;
+    height: 100%;
+}
+
+.pokedex_buttons-rigth > img {
+    width: 100px;
+    margin-left: 20%;
+}
+
+

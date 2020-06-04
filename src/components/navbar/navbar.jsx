@@ -18,27 +18,27 @@ const Navbar = () =>  {
                     </div>
                 </div>
             </div>
-            <div className="header2 collapse navbar-collapse" id="navbarNav">
-                <ul className="navbar-nav">
+            <div className="header2">
+                <ul className="nav justify-content-center">
                 <li className="nav-item active">
                     <Link to="/home">
-                    <p className="nav-link">Home <span className="sr-only">(current)</span></p>
+                    <p className="nav-link text-body">Home <span className="sr-only">(current)</span></p>
                     </Link>
                 </li>
                 <img className='mt-2' src="https://img.icons8.com/color/48/000000/pokeball--v1.png" width="25" height="25" alt="pokeball"/>
                 <li className="nav-item">
                     <Link to="/">
-                    <p className="nav-link">Features</p>
+                    <p className="nav-link text-body">Features</p>
                     </Link>
                 </li>
                 <img className='mt-2' src="https://img.icons8.com/color/48/000000/pokeball--v1.png" width="25" height="25" alt="pokeball"/>
                 <li className="nav-item">
-                    <p className="nav-link">Favorites</p>
+                    <p className="nav-link text-body">Favorites</p>
                 </li>
                 <img className='mt-2' src="https://img.icons8.com/color/48/000000/pokeball--v1.png" width="25" height="25" alt="pokeball"/>
                 <li className="nav-item">
                     <Link to="/info">
-                    <p className="nav-link">Info</p>
+                    <p className="nav-link text-body">Info</p>
                     </Link>
                 </li>
                 </ul>
