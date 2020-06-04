@@ -17,7 +17,7 @@ function App() {
             <Route exact path="/home" component={ Home } />
             <Route exact path="/" component={ MainView } />
             <Route exact path="/info" component={ Info }/>
-            <Route exact path="/details" component= { Details }/>
+            <Route exact path="/details/:tag" component= { Details }/>
         </Switch>
     </BrowserRouter>
   );

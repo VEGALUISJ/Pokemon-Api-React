@@ -49,23 +49,57 @@
 .pokedex_screen {
     background-color: grey;
     width: 85%;
-    height: 350px;
+    height: auto;
     margin: auto;
     padding-top: 25px;
+    padding-bottom: 30px;
     border-radius: 15px 15px 15px 80px;
 }
 
 .pokedex_screen-inside {
     background-color: black;
     width: 90%;
-    height: 90%;
+    height: auto;
     margin: auto;
     border-radius: 15px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pokedex_screen-inside-left{
+    width: 70%;
+    height: 20%;
+}
+
+.pokedex_screen-inside-left-up > p {
+    color: white;
+    padding-top: 5%;
+    padding-left: 5%;
+    text-transform: uppercase;
+    font-family: 'Chelsea Market', cursive;
+    font-size: 150%;
+}
+
+.pokedex_screen-inside-left-down {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.pokedex_screen-inside-rigth {
+    font-size: 100%;
+    color: cornsilk;
+    text-transform: uppercase;
+    font-family: 'Chelsea Market', cursive;
+    padding-top: 8%;
+    display: flex;
+    flex-direction: column;
 }
 
 .pokedex_buttons {
     width: 90%;
-    height: 100px;
+    height: auto;
     margin: auto;
     display: flex;
     flex-direction: row;
