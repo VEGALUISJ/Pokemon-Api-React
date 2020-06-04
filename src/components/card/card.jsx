@@ -10,11 +10,11 @@ const Card = () => {
                 <div className="card-body">
                     <h5 className="card-title">Pokemon Name</h5>
                     <div className="button-holder">
-                        <button type="button" class="btn btn-warning">
+                        <button type="button" className="btn btn-warning">
                             <img className="mr-1" src="https://img.icons8.com/material-outlined/24/000000/show-property.png" alt="details"/>
                             Details
                         </button>
-                        <button type="button" class="btn btn-danger">
+                        <button type="button" className="btn btn-danger">
                             <img className="mr-1" src="https://img.icons8.com/material-outlined/24/000000/add-to-favorites.png" alt="favorite"/>
                             Favorites
                         </button>
