@@ -3,7 +3,7 @@ import PokemonImg from "../../assets/pokemon-img.png"
 import './Home.css'
 import Card from '../../components/card/card'
 
-const Home = props => {
+const Home = () => {
     const [pokemonName, setPokemonName] = React.useState([]);
 
     React.useEffect(()=> {
